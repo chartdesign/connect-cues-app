@@ -1,12 +1,15 @@
-import Layout from "./components/Layout";
-import { Routes, Route, Navigate } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { Outlet } from "react-router-dom";
 
 export default function App() {
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Layout />}></Route>
-      </Routes>
+      <Header />
+      <main className=''>
+        <Outlet />
+      </main>
+      <Footer />
     </>
   );
 }
