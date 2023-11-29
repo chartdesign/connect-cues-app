@@ -7,12 +7,12 @@ const Header = () => {
         <div className='flex'>Your Logo</div>
 
         {/* Hamburger Menu Icon (visible on small screens) */}
-        <div className='lg:hidden'>
+        <div className='md:hidden'>
           <Sidebar />
         </div>
 
         {/* Desktop Navigation Links (hidden on small screens) */}
-        <div className='hidden lg:flex space-x-4'>
+        <div className='hidden md:flex space-x-4 items-center'>
           <a href='#' className='text-midGreen hover:text-gray-400'>
             Link 1
           </a>
@@ -22,6 +22,12 @@ const Header = () => {
           <a href='#' className='text-midGreen hover:text-gray-400'>
             Link 3
           </a>
+          <div className='flex font-light gap-2'>
+            <button>Sign In</button>
+            <button className='bg-midGreen text-lightGreen p-2 rounded-lg'>
+              Sign Up
+            </button>
+          </div>
         </div>
       </div>
     </nav>
