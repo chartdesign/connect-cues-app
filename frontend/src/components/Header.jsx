@@ -1,10 +1,13 @@
+import { Link, useParams, useNavigate } from "react-router-dom";
 import Sidebar from "./ui/SideBar";
 
 const Header = () => {
   return (
     <nav className='bg-lightGreen p-4 border-b border-midGreen/25'>
       <div className='container mx-auto flex items-center justify-between'>
-        <div className='flex'>Your Logo</div>
+        <Link to='/'>
+          <div className='flex'>Your Logo</div>
+        </Link>
 
         {/* Hamburger Menu Icon (visible on small screens) */}
         <div className='md:hidden'>

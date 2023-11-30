@@ -9,11 +9,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomeScreen from "./components/screens/HomeScreen.jsx";
+import TopicsScreen from "./components/screens/TopicsScreen.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route index={true} path='/' element={<HomeScreen />} />
+      <Route path='/topics/:id' element={<TopicsScreen />} />
     </Route>
   )
 );

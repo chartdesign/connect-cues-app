@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const DropdownMenu = ({ menuItems }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,16 +45,16 @@ const DropdownMenu = ({ menuItems }) => {
           <div className='py-1' role='none'>
             {/* Dynamic Dropdown menu items */}
             {menuItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href={item.href}
+                id={`menu-item-${index}`}
+                to={`${item.href}/${index}`}
                 className='text-gray-700 block px-4 py-2 text-sm'
                 role='menuitem'
                 tabIndex='-1'
-                id={`menu-item-${index}`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

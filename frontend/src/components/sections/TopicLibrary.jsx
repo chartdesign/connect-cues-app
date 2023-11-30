@@ -4,8 +4,8 @@ import DropdownMenu from "../ui/DropdownMenu";
 
 const menuItems = [
   { label: "Home", href: "/" },
-  { label: "Profile", href: "/profile" },
-  { label: "Settings", href: "/settings" },
+  { label: "Profile", href: "/topics" },
+  { label: "Settings", href: "/topics" },
   // Add more menu items here
 ];
 
