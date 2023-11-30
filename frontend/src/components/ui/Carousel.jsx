@@ -70,7 +70,7 @@ const Carousel = () => {
             <img
               src={category.image}
               alt='people'
-              className='opacity-50 z-1 w-full object-fill'
+              className=' opacity-50 z-1 object-fit'
             />
           </div>
         </div>
