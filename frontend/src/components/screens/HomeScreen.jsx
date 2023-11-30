@@ -1,12 +1,13 @@
 import React from "react";
 import Hero from "../sections/Hero";
-import Carousel from "../ui/Carousel";
+
+import TopicLibrary from "../sections/TopicLibrary";
 
 const HomeScreen = () => {
   return (
     <>
       <Hero />
-      <Carousel />
+      <TopicLibrary />
     </>
   );
 };

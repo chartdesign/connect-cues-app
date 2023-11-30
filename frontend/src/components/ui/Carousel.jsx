@@ -3,10 +3,30 @@ import { Link } from "react-router-dom";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const categories = [
-  { id: 0, name: "Business" },
-  { id: 1, name: "Technology" },
-  { id: 2, name: "Current Events" },
-  { id: 3, name: "Personal Interest" },
+  {
+    id: 0,
+    name: "Business",
+    image:
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 1,
+    name: "Technology",
+    image:
+      "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 2,
+    name: "Current Events",
+    image:
+      "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 3,
+    name: "Personal Interest",
+    image:
+      "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
 ];
 
 const Carousel = () => {
@@ -33,18 +53,25 @@ const Carousel = () => {
   }, [currentIndex]); // Dependency array
 
   return (
-    <div className='relative bg-midGreen overflow-hidden h-[400px] w-full text-center'>
-      <p className='p-4 text-white'> Topics of interest</p>
+    <div className='relative overflow-hidden text-center h-[250px]'>
+      {/* <p className='p-4'> Topics of interest</p> */}
 
       {categories.map((category, index) => (
         <div
           key={category.id}
-          className={`transition-opacity duration-500 ease-in-out flex justify-center ${
+          className={` transition-opacity duration-500 ease-in-out flex  ${
             index === currentIndex ? "opacity-75" : "opacity-0"
           }`}
         >
-          <div className='absolute top-1/3  text-white p-4 z-10'>
-            <h2 className='text-center text-4xl'>{category.name}</h2>
+          <div className='absolute text-white z-10'>
+            <span className='absolute top-[16px] left-[32px] text-center text-4xl z-10'>
+              {category.name}
+            </span>
+            <img
+              src={category.image}
+              alt='people'
+              className='opacity-50 z-1 w-full object-fill'
+            />
           </div>
         </div>
       ))}
