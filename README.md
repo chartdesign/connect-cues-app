@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Networking Conversation Starter
+This app aims to make networking and small talk easier by providing tailored conversation topics and starters for any situation. It helps users engage more meaningfully at events, meetings, and in everyday interactions.
 
-## Getting Started
+Key Features
+Topic Library: Browse 1000+ conversation starters across 100+ categories including business, tech, hobbies, pop culture, and more.
 
-First, run the development server:
+Personalization: Get suggested topics based on your interests, industry, and event details. Save your favorites for quick access later.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Real-Time Mode: Get relevant talking points and questions during a conversation based on what's being discussed.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ice-Breakers: Fun games and activities to break the ice in group settings and get conversations flowing comfortably.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Learning & Feedback: Reflect on conversations to improve over time. Get tips on body language, listening skills, and exiting conversations gracefully.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Event Customization: Input event details like type, audience, goals, etc and get tailored suggestions. Useful for conferences, meetups, parties, and more.
 
-## Learn More
+Community: Share experiences, suggest new topics, and support others in building networking skills.
 
-To learn more about Next.js, take a look at the following resources:
+Multi-language: Practice small talk and network internationally with topics in multiple languages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Integrations: Connect with LinkedIn, Calendar, and other apps for enhanced personalization.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Getting Started
+Sign up for an account
+Take the onboarding quiz to customize your topic recommendations
+Browse the topic library and save favorites
+Enable real-time mode before your next event
+Use the practice conversations to rehearse networking skills
+Provide feedback after events to continually improve suggestions
+Engage with the community to keep growing your networking abilities
+Tech Stack
+NextJS
+React
+TailwindCSS
+next-auth
+MongoDB
+Prisma
+Contributions
+Contributions to expand the topic library, improve recommendations, and enhance the UX are all welcome!
 
-## Deploy on Vercel
+Please check out our Contributing Guide to get started.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+License
+This project is licensed under the MIT license. See LICENSE for more details.
