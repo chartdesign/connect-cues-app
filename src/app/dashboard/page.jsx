@@ -38,9 +38,10 @@ export default function DashboardPage() {
   const { data: session, status } = useSession();
 
   return (
-    <div>
+    <div className='mt-20'>
       DashboardPage
       <AuthLinks status={status} userName={session?.user?.name || "User"} />
+      {status === "authenticated" && <div>Hello, {session.user.name}</div>}
     </div>
   );
 }

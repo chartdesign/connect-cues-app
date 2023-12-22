@@ -18,7 +18,7 @@ const LoginPage = () => {
     });
 
     if (result?.ok) {
-      router.push("/dashboard");
+      router.push("/profile");
     } else {
       // Handle the error case, e.g., show an error message to the user
       alert("Login failed");
