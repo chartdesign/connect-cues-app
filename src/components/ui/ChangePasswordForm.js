@@ -54,13 +54,13 @@ const ChangePasswordForm = () => {
               required
               value={formData.oldPassword}
               onChange={handleChange}
-              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              className='block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
             />
           </div>
         </div>
 
         <div className='flex items-center justify-between gap-4'>
-          <div>
+          <div className='mt-4 w-1/2'>
             <label htmlFor='newPassword'>New Password:</label>
             <input
               type='password'
@@ -69,10 +69,10 @@ const ChangePasswordForm = () => {
               placeholder='New Password'
               value={formData.newPassword}
               onChange={handleChange}
-              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              className='block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
             />
           </div>
-          <div>
+          <div className='mt-4 w-1/2'>
             <label htmlFor='confirmPassword'>Confirm Password:</label>
             <input
               type='password'
@@ -81,14 +81,14 @@ const ChangePasswordForm = () => {
               placeholder='Confirm Password'
               value={formData.confirmPassword}
               onChange={handleChange}
-              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              className='block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
             />
           </div>
         </div>
 
         <button
           type='submit'
-          className='mt-4 inline-flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:ml-3 sm:mt-0 sm:w-auto'
+          className='mt-4 w-full bg-gray-900 text-white rounded-full py-2 px-4 hover:bg-gray-500'
         >
           Update Password
         </button>
