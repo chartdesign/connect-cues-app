@@ -3,6 +3,7 @@ import React from "react";
 import { useSession, signOut } from "next-auth/react";
 import ChangePasswordForm from "@/components/ui/ChangePasswordForm";
 import HandlePreferencesForm from "@/components/ui/HandlePreferencesForm";
+import AccountSettings from "@/components/ui/AccountSettings";
 
 const page = () => {
   const { data: session, status } = useSession();
@@ -14,6 +15,7 @@ const page = () => {
         <h2 className='font-semibold'>Account settings</h2>
 
         <HandlePreferencesForm />
+        <AccountSettings />
       </section>
     </>
   );
